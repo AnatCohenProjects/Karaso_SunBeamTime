@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ed214be85ad96e04ab2b6104b50557be
+guid: 183bdc2fe730f2b4d9e7f5cae7768b6e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 666016181726916391
-    second: Large_Rainbow_Transparent_PNG_Clipart_0
+      213: 4929039383362632271
+    second: ChatGPT Image May 13, 2025, 03_38_35 PM_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,43 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Large_Rainbow_Transparent_PNG_Clipart_0
+      name: ChatGPT Image May 13, 2025, 03_38_35 PM_0
       rect:
         serializedVersion: 2
-        x: 165
-        y: 77
-        width: 4883
-        height: 2550
+        x: 0
+        y: 0
+        width: 1536
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72fae76403a2e3900800000000000000
-      internalID: 666016181726916391
+      spriteID: f4a7d393437776440800000000000000
+      internalID: 4929039383362632271
       vertices: []
       indices: 
       edges: []
@@ -173,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Large_Rainbow_Transparent_PNG_Clipart_0: 666016181726916391
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
