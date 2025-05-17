@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: GameTexts Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: GameTexts
+  m_TableCollectionNameGuidString: 05b9c48ff54dc1742a861e28f4146b67
+  m_Entries:
+  - m_Id: 17010343936
+    m_Key: Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1832137342976
+    m_Key: InfoTxt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1891910369280
+    m_Key: BtnBeforeLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2570150297600
+    m_Key: BtnAfterLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 874237303013376
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1027724863268716757
+  references:
+    version: 2
+    RefIds:
+    - rid: 1027724863268716757
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1747305443150

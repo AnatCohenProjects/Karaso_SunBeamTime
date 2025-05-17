@@ -5,13 +5,14 @@ using System.Collections;
 using TMPro;
 using System;
 using UnityEngine.SocialPlatforms.Impl;
+using RTLTMPro;
 
 public class Main : MonoBehaviour
 {
     [SerializeField] Button startCountDownBtn;
     [SerializeField] SpriteRenderer spriteRay;
     [SerializeField] int rayDuration;//in minutes
-    [SerializeField] TextMeshProUGUI countDownTimer;
+    [SerializeField] RTLTextMeshPro countDownTimer;
     [SerializeField] Image rayMask;
     private RectTransform rayMaskRectTransform;
 
