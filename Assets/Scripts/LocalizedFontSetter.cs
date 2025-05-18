@@ -1,12 +1,14 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Localization;
 using TMPro;
 using UnityEngine.Localization.Settings;
+using System.Xml;
+using RTLTMPro;
 
 public class LocalizedFontSetter : MonoBehaviour
 {
     public LocalizedAsset<TMP_FontAsset> localizedFont;
-    public TextMeshProUGUI /*TMP_Text*/ textMesh;
+    public RTLTextMeshPro /*TMP_Text*/ textMesh;
     public LocalizedString localizedString;
 
     void Start()
@@ -23,7 +25,7 @@ public class LocalizedFontSetter : MonoBehaviour
     }
     void OnEnable()
     {
-        textMesh = GetComponent<TextMeshProUGUI>();
+        textMesh = GetComponent<RTLTextMeshPro>();
         localizedString.StringChanged += UpdateTextWithDirection;
         localizedString.RefreshString(); 
     }
@@ -35,19 +37,30 @@ public class LocalizedFontSetter : MonoBehaviour
 
     void UpdateTextWithDirection(string rawText)
     {
-        string langCode = LocalizationSettings.SelectedLocale.Identifier.Code;
 
-        string prefix = langCode switch
+        var code = LocalizationSettings.SelectedLocale.Identifier.Code;
+
+        if (code == "ar" || code == "he")
         {
-            "he" => "\u200F", //  RTL
-            "ar" => "\u200F", //  RTL
-            _ => "\u200E"     // LTR
-        };
-
-        textMesh.text = prefix + rawText;
-
-        textMesh.alignment = (langCode == "he" || langCode == "ar")
-        ? TextAlignmentOptions.Right
-        : TextAlignmentOptions.Left;
+            // שפה RTL → השארי Fix On
+            textMesh.Farsi = true;      // מאפשר חיבור אותיות
+            textMesh.ForceFix = false;     // לא מכריח עיבוד לתווים לטיניים
+           // textMesh.alignment = TextAlignmentOptions.Right;
+            textMesh.text = rawText;
+        }
+        else
+        {
+            // שפה LTR → כבי את ה‑RTL
+            textMesh.Farsi = false;
+            textMesh.ForceFix = false;
+           // textMesh.alignment = TextAlignmentOptions.Left;
+            textMesh.text = "\u200E" + rawText; // תו LTR מונע בלבול כיווניות
+        }
     }
+
+        
+        /*textMesh.alignment = (langCode == "he" || langCode == "ar")
+        ? TextAlignmentOptions.Right
+        : TextAlignmentOptions.Left;*/
+    
 }

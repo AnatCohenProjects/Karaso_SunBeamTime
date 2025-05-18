@@ -43,6 +43,7 @@ public class Main : MonoBehaviour
 
     void StartStopwatch()
     {
+        startCountDownBtn.GetComponent<DynamicKeyChanger>().SetKey("BtnAfterLabel");
         TimerScript.StartCountdown(rayDuration);
         isRunning = true;
         timeElapsed = 0f;

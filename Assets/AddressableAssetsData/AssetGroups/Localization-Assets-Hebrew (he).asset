@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-Assets-Hebrew (he)
   m_GUID: 323a3070a9c984a4eba2d1f70837b2fa
   m_SerializeEntries:
+  - m_GUID: 46c16078d853d0c4a9b108721de3920a
+    m_Address: Orbitron-VariableFont_wght SDF
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-he
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7ee941cad0ad30441989ab461f1d82df
     m_Address: NotoSansHebrew-VariableFont_wdth,wght SDF
     m_ReadOnly: 1

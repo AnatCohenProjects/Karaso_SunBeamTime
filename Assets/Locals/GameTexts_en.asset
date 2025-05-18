@@ -25,11 +25,15 @@ MonoBehaviour:
       m_Items:
       - rid: 1027724863268716760
   - m_Id: 1891910369280
-    m_Localized: "\\u200E \\u200EThe\u200E beam is on its way!\u200E"
+    m_Localized: Send a sunbeam
     m_Metadata:
       m_Items: []
   - m_Id: 17010343936
-    m_Localized: \u200E\u200E How long does it take for a sunbeam to reach Earth?
+    m_Localized: 'How long does it take for a sunbeam to reach Earth?
+
+      
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 2570150297600
