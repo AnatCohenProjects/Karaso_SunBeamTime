@@ -1,39 +1,38 @@
 ﻿using UnityEngine;
 using UnityEngine.Localization.Settings;
+using UnityEngine.U2D;
 using UnityEngine.UI;
 
 public class LanguageSelector : MonoBehaviour
 
   {
+    [Header("הספרייטים להצגה")]
+    public Sprite  HeBg;
+    public Sprite  EnBg;
+    public Sprite  ArBg;
 
     [SerializeField] Button HeBtn;
     [SerializeField] Button EnBtn;
     [SerializeField] Button ARBtn;
 
+    [SerializeField] Image displayImage;
+
     // קריאה ישירה לשפות לפי הקוד
     public void SetHebrew()
     {
         SetLocale("he");
-        HeBtn.gameObject.SetActive(true);
-        EnBtn.gameObject.SetActive(false);
-        ARBtn.gameObject.SetActive(false);
 
     }
-
     public void SetEnglish()
     {
         SetLocale("en");
-        HeBtn.gameObject.SetActive(false);
-        EnBtn.gameObject.SetActive(true);
-        ARBtn.gameObject.SetActive(false);
+        
     }
 
     public void SetArabic()
     {
         SetLocale("ar");
-         HeBtn.gameObject.SetActive(false);
-        EnBtn.gameObject.SetActive(false);
-        ARBtn.gameObject.SetActive(true);
+ 
     }
 
     void SetLocale(string code)
@@ -45,5 +44,19 @@ public class LanguageSelector : MonoBehaviour
             LocalizationSettings.SelectedLocale = locale;
         else
             Debug.LogWarning($"Locale '{code}' לא נמצא ב־AvailableLocales");
+
+        switch(code)
+        {
+            case "he":
+                displayImage.sprite = HeBg;
+                break;
+            case "en":
+                displayImage.sprite = EnBg;
+                break;
+            case "ar":
+                displayImage.sprite = ArBg;
+                break;
+
+        }
     }
 }

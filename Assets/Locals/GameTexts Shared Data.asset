@@ -16,7 +16,7 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 05b9c48ff54dc1742a861e28f4146b67
   m_Entries:
   - m_Id: 17010343936
-    m_Key: BtnBeforeLabelk
+    m_Key: Title
     m_Metadata:
       m_Items: []
   - m_Id: 1832137342976
@@ -29,10 +29,6 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2570150297600
     m_Key: BtnAfterLabel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 874237303013376
-    m_Key: New Entry
     m_Metadata:
       m_Items: []
   m_Metadata:

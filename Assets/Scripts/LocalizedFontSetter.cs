@@ -21,7 +21,7 @@ public class LocalizedFontSetter : MonoBehaviour
             }
         };
 
-        // localizedFont.RefreshAsset(); 
+     //  localizedFont.RefreshAsset(); 
     }
     void OnEnable()
     {

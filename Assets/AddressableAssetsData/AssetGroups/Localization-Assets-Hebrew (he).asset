@@ -21,12 +21,6 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-he
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7ee941cad0ad30441989ab461f1d82df
-    m_Address: NotoSansHebrew-VariableFont_wdth,wght SDF
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-he
-    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 40773f8f8f8d89247929bb912e59a789, type: 2}
   m_SchemaSet:

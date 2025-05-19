@@ -19,22 +19,6 @@ MonoBehaviour:
     m_Key: Lang
     m_Metadata:
       m_Items: []
-  - m_Id: 22073580011520
-    m_Key: New Entry
-    m_Metadata:
-      m_Items: []
-  - m_Id: 22073596788736
-    m_Key: New Entry 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 22079078744064
-    m_Key: New Entry 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 22083453403136
-    m_Key: Lan
-    m_Metadata:
-      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 1027724867177807951
@@ -52,11 +36,6 @@ MonoBehaviour:
       data:
         m_Entries:
         - m_KeyId: 6251113431040
-          m_TableCodes:
-          - ar
-          - en
-          - he
-        - m_KeyId: 22083453403136
           m_TableCodes:
           - ar
           - en
