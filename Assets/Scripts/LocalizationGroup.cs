@@ -42,10 +42,10 @@ public class LocalizationGroup : MonoBehaviour
     }
     public void SetEnglishText(string text)
     {
-        textHE.text = text;
+        textEN.text = text;
     }
     public void SetArabicText(string text)
     {
-        textHE.text = text;
+        textAR.text = text;
     }
 }

@@ -17,16 +17,19 @@ public class Main : MonoBehaviour
     [SerializeField] InfoBox infoBox;
     private RectTransform rayMaskRectTransform;
     [SerializeField] Button resetBtn;
+    [SerializeField] GameObject title;
 
     private float timeElapsed = 0f;
     private bool isRunning = false;
     private CountDownTimer TimerScript;
+    private LocalizationGroup titleTexts;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        titleTexts = title.GetComponent<LocalizationGroup>();   
         startCountDownBtn.onClick.AddListener(StartStopwatch);
+        resetBtn.onClick.AddListener(ResetGame);
 
         rayMaskRectTransform = rayMask.GetComponent<RectTransform>();
     }
@@ -41,6 +44,23 @@ public class Main : MonoBehaviour
         }
     }
 
+    void ResetGame()
+    {
+        isRunning = false;
+        infoBox.Hide();
+        countDownTimer.gameObject.SetActive(false);
+        startCountDownBtn.gameObject.SetActive(true);
+
+        titleTexts.SetHebrewText("כמה זמן נדרש לקרן אור מהשמש להגיע לכדור הארץ?");
+        titleTexts.SetEnglishText("How long does it take for a sunbeam \r\n\\rto reach Earth?");
+        titleTexts.SetArabicText("كم من الوقت تحتاج أشعة الضوء من الشمس للوصول إلى الأرض؟");
+
+        float maxWidth = 2020f; // או כל רוחב אחר שמתאים לך
+        var sd = rayMaskRectTransform.sizeDelta;
+        sd.x = Mathf.Lerp(0f, maxWidth, 0);
+        rayMaskRectTransform.sizeDelta = sd;
+
+    }
 
     void StartStopwatch()
     {
