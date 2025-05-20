@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: GameTexts
   m_EditorClassIdentifier: 
   m_StartupSelectors:
+  - rid: 1027724863268716735
   - rid: 1027724863268716733
   - rid: 1027724863268716734
-  - rid: 1027724863268716735
   m_AvailableLocales:
     rid: 1027724863268716736
   m_AssetDatabase:

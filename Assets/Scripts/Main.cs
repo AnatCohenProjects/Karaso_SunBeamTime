@@ -1,4 +1,4 @@
-
+﻿
 using UnityEngine;
 using UnityEngine.UI; 
 using System.Collections;
@@ -12,9 +12,11 @@ public class Main : MonoBehaviour
     [SerializeField] Button startCountDownBtn;
     [SerializeField] SpriteRenderer spriteRay;
     [SerializeField] int rayDuration;//in minutes
-    [SerializeField] RTLTextMeshPro countDownTimer;
+    [SerializeField] CountDownTimer countDownTimer;
     [SerializeField] Image rayMask;
+    [SerializeField] InfoBox infoBox;
     private RectTransform rayMaskRectTransform;
+    [SerializeField] Button resetBtn;
 
     private float timeElapsed = 0f;
     private bool isRunning = false;
@@ -26,7 +28,6 @@ public class Main : MonoBehaviour
 
         startCountDownBtn.onClick.AddListener(StartStopwatch);
 
-        TimerScript = countDownTimer.GetComponent<CountDownTimer>();
         rayMaskRectTransform = rayMask.GetComponent<RectTransform>();
     }
 
@@ -43,8 +44,16 @@ public class Main : MonoBehaviour
 
     void StartStopwatch()
     {
-        startCountDownBtn.GetComponent<DynamicKeyChanger>().SetKey("BtnAfterLabel");
-        TimerScript.StartCountdown(rayDuration);
+        /* textsGroup = startCountDownBtn.GetComponent<LocalizationGroup>();
+        textsGroup.SetHebrewText("הקרן בדרך!");
+        textsGroup.SetEnglishText("The beam is on its way!");
+        textsGroup.SetArabicText("الشعاع في الطريق!");*/
+
+        countDownTimer.gameObject.SetActive(true);
+        startCountDownBtn.gameObject.SetActive(false);
+        infoBox.Show();
+
+        countDownTimer.StartCountdown(rayDuration);
         isRunning = true;
         timeElapsed = 0f;
     }
@@ -52,8 +61,17 @@ public class Main : MonoBehaviour
 
     void UpdateRaySize()
     {
-        float percentage = TimerScript.GetProgressionPrecentage();
-        Debug.Log("percentage" + percentage);
-        rayMaskRectTransform.sizeDelta = new Vector2(rayMaskRectTransform.sizeDelta.x, Mathf.Lerp(0f, 90f, percentage));
+        float percentage = countDownTimer.GetProgressionPrecentage();
+        percentage = Mathf.Clamp01(percentage);
+ 
+        // 2. חשבי רוחב מקסימלי שברצונך להגיע אליו
+        float maxWidth = 2020f; // או כל רוחב אחר שמתאים לך
+
+        // 3. עדכני את ה‑RectTransform על ציר ה‑X
+        //    אפשר בגישה הישנה:
+        var sd = rayMaskRectTransform.sizeDelta;
+        sd.x = Mathf.Lerp(0f, maxWidth, percentage);
+        rayMaskRectTransform.sizeDelta = sd;
+        
     }
 }

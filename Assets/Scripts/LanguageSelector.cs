@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Localization.Settings;
 using UnityEngine.U2D;
 using UnityEngine.UI;
@@ -6,6 +7,9 @@ using UnityEngine.UI;
 public class LanguageSelector : MonoBehaviour
 
   {
+    public static LanguageSelector Instance { get; private set; }
+    public static event Action<string> OnLanguageChanged;
+
     [Header("הספרייטים להצגה")]
     public Sprite  HeBg;
     public Sprite  EnBg;
@@ -45,7 +49,8 @@ public class LanguageSelector : MonoBehaviour
         else
             Debug.LogWarning($"Locale '{code}' לא נמצא ב־AvailableLocales");
 
-        switch(code)
+        OnLanguageChanged?.Invoke(code);
+        switch (code)
         {
             case "he":
                 displayImage.sprite = HeBg;

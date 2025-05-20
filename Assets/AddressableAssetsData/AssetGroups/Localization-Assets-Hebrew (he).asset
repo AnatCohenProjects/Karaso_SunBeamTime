@@ -15,8 +15,8 @@ MonoBehaviour:
   m_GroupName: Localization-Assets-Hebrew (he)
   m_GUID: 323a3070a9c984a4eba2d1f70837b2fa
   m_SerializeEntries:
-  - m_GUID: 46c16078d853d0c4a9b108721de3920a
-    m_Address: Orbitron-VariableFont_wght SDF
+  - m_GUID: 743ff6528cc67d24bbc54d2969f0af93
+    m_Address: segoeui SDF Hebrew
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-he
