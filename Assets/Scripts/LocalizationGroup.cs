@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using TMPro;
 using RTLTMPro;
+using System.Collections.Generic;
+using UnityEngine.Localization.Settings;
 
 public class LocalizationGroup : MonoBehaviour
 {
@@ -9,7 +11,7 @@ public class LocalizationGroup : MonoBehaviour
     public TMP_Text textEN;
     public RTLTextMeshPro textAR;
 
- 
+    private List<bool> _originalStates = new List<bool>();
     public void SetLanguage(string code)
     {
         bool isHE = code == "he";
@@ -30,6 +32,7 @@ public class LocalizationGroup : MonoBehaviour
     void OnEnable()
     {
         LanguageSelector.OnLanguageChanged += SetLanguage;
+        SetLanguage(LocalizationSettings.SelectedLocale.Formatter.ToString());
     }
 
     void OnDisable()
@@ -48,4 +51,5 @@ public class LocalizationGroup : MonoBehaviour
     {
         textAR.text = text;
     }
+  
 }

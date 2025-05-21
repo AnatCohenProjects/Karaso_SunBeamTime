@@ -6,6 +6,7 @@ using TMPro;
 using System;
 using UnityEngine.SocialPlatforms.Impl;
 using RTLTMPro;
+using UnityEngine.Localization.Settings;
 
 public class Main : MonoBehaviour
 {
@@ -51,10 +52,6 @@ public class Main : MonoBehaviour
         countDownTimer.gameObject.SetActive(false);
         startCountDownBtn.gameObject.SetActive(true);
 
-        titleTexts.SetHebrewText("כמה זמן נדרש לקרן אור מהשמש להגיע לכדור הארץ?");
-        titleTexts.SetEnglishText("How long does it take for a sunbeam \r\n\\rto reach Earth?");
-        titleTexts.SetArabicText("كم من الوقت تحتاج أشعة الضوء من الشمس للوصول إلى الأرض؟");
-
         float maxWidth = 2020f; // או כל רוחב אחר שמתאים לך
         var sd = rayMaskRectTransform.sizeDelta;
         sd.x = Mathf.Lerp(0f, maxWidth, 0);
@@ -64,14 +61,17 @@ public class Main : MonoBehaviour
 
     void StartStopwatch()
     {
-        /* textsGroup = startCountDownBtn.GetComponent<LocalizationGroup>();
-        textsGroup.SetHebrewText("הקרן בדרך!");
-        textsGroup.SetEnglishText("The beam is on its way!");
-        textsGroup.SetArabicText("الشعاع في الطريق!");*/
 
         countDownTimer.gameObject.SetActive(true);
         startCountDownBtn.gameObject.SetActive(false);
         infoBox.Show();
+
+        string code = LocalizationSettings.SelectedLocale.Identifier.Code;
+       
+        BreathingText[] InfoTextsBoxes =  infoBox.GetComponentsInChildren<BreathingText>();
+     
+        foreach (BreathingText infoTxt in InfoTextsBoxes)
+            infoTxt.Startanimation();
 
         countDownTimer.StartCountdown(rayDuration);
         isRunning = true;

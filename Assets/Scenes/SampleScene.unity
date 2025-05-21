@@ -1653,6 +1653,8 @@ GameObject:
   - component: {fileID: 746656624}
   - component: {fileID: 746656626}
   - component: {fileID: 746656625}
+  - component: {fileID: 746656628}
+  - component: {fileID: 746656627}
   m_Layer: 5
   m_Name: TxtInfo_Ar
   m_TagString: Untagged
@@ -1676,7 +1678,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9, y: -40}
+  m_AnchoredPosition: {x: 9, y: -21}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &746656625
@@ -1766,7 +1768,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -811.5844, y: 0, z: -766.05334, w: -201.66663}
+  m_margin: {x: -372.8423, y: 0, z: -353.31018, w: 152.57724}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1787,6 +1789,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746656623}
   m_CullTransparentMesh: 1
+--- !u!114 &746656627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746656623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a599d0254d2d84cb8c762d79e0b19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _messages:
+  - " \u062A\u0645\u0631 \u0623\u0634\u0639\u0629 \u0627\u0644\u0636\u0648\u0621
+    \u0639\u0628\u0631 \u0627\u0644\u0641\u0636\u0627\u0621  \u0628\u064A\u0646 \u0627\u0644\u0634\u0645\u0633
+    \u0648\u0627\u0644\u0623\u0631\u0636"
+  - " \u062A\u062A\u062D\u0631\u0643 \u0627\u0644\u0623\u0634\u0639\u0629 \u0628\u0633\u0631\u0639\u0629
+    \u0627\u0644\u0636\u0648\u0621 \u062D\u0648\u0627\u0644\u064A 300,000 \u0643\u064A\u0644\u0648\u0645\u062A\u0631
+    \u0641\u064A \u0627\u0644\u062B\u0627\u0646\u064A\u0629"
+  - " \u0627\u0644\u0645\u0633\u0627\u0641\u0629 \u0628\u064A\u0646 \u0627\u0644\u0623\u0631\u0636
+    \u0648\u0627\u0644\u0634\u0645\u0633 \u0647\u064A 150 \u0645\u0644\u064A\u0648\u0646
+    \u0643\u064A\u0644\u0648\u0645\u062A\u0631"
+  - " \u0628\u062F\u0648\u0646 \u0636\u0648\u0621 \u0627\u0644\u0634\u0645\u0633
+    \u0644\u0646 \u062A\u0633\u062A\u0637\u064A\u0639 \u0627\u0644\u0646\u0628\u0627\u062A\u0627\u062A
+    \u0627\u0644\u0642\u064A\u0627\u0645 \u0628\u0639\u0645\u0644\u064A\u0629 \u0627\u0644\u062A\u0645\u062B\u064A\u0644
+    \u0627\u0644\u0636\u0648\u0626\u064A \u0648\u0625\u0646\u062A\u0627\u062C \u0627\u0644\u0623\u0643\u0633\u062C\u064A\u0646"
+  - 
+  - "\u062A\u0644\u062A\u0642\u0637 \u0627\u0644\u0623\u0644\u0648\u0627\u062D \u0627\u0644\u0634\u0645\u0633\u064A\u0629
+    \u0623\u0634\u0639\u0629 \u0627\u0644\u0634\u0645\u0633\u060C \u0648\u062A\u062D\u0648\u0644\u0647\u0627
+    \u0625\u0644\u0649 \u0637\u0627\u0642\u0629 \u0643\u0647\u0631\u0628\u0627\u0626\u064A\u0629"
+  - "\u0645\u0631\u062A \u062D\u0648\u0627\u0644\u064A \u062B\u0645\u0627\u0646\u064A
+    \u062F\u0642\u0627\u0626\u0642 - \u0648\u0635\u0644 \u0634\u0639\u0627\u0639
+    \u0627\u0644\u0634\u0645\u0633 \u0625\u0644\u0649 \u0627\u0644\u0623\u0631\u0636"
+  totalDuration: 5
+  iterations: 6
+  fadeDuration: 1
+--- !u!225 &746656628
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746656623}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &793744036
 GameObject:
   m_ObjectHideFlags: 0
@@ -2016,8 +2066,6 @@ GameObject:
   - component: {fileID: 935842801}
   - component: {fileID: 935842804}
   - component: {fileID: 935842803}
-  - component: {fileID: 935842806}
-  - component: {fileID: 935842805}
   m_Layer: 5
   m_Name: Info
   m_TagString: Untagged
@@ -2116,83 +2164,6 @@ MonoBehaviour:
   duration: 0.5
   visibleY: -812
   hiddenY: -1209
---- !u!225 &935842805
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 935842799}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
---- !u!114 &935842806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 935842799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6a599d0254d2d84cb8c762d79e0b19d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textBox: {fileID: 0}
-  He_messages:
-  - "\u05E7\u05E8\u05E0\u05D9 \u05D4\u05D0\u05D5\u05E8 \u05E2\u05D5\u05D1\u05E8\u05D5\u05EA
-    \u05D1\u05D7\u05DC\u05DC \u05D4\u05E8\u05D9\u05E7 \u05E9\u05D1\u05D9\u05DF \u05D4\u05E9\u05DE\u05E9
-    \u05DC\u05DB\u05D3\u05D5\u05E8 \u05D4\u05D0\u05E8\u05E5."
-  - "\u05D4\u05E7\u05E8\u05E0\u05D9\u05D9\u05DD \u05E0\u05E2\u05D5\u05EA \u05D1\u05DE\u05D4\u05D9\u05E8\u05D5\u05EA
-    \u05D4\u05D0\u05D5\u05E8 \u2013 \u05DB\u05BE300,000 \u05E7\u05D9\u05DC\u05D5\u05DE\u05D8\u05E8
-    \u05D1\u05E9\u05E0\u05D9\u05D9\u05D4."
-  - "\u05D4\u05DE\u05E8\u05D7\u05E7 \u05D1\u05D9\u05DF \u05DB\u05D3\u05D5\u05E8 \u05D4\u05D0\u05E8\u05E5
-    \u05DC\u05E9\u05DE\u05E9 \u05D4\u05D5\u05D0 150 \u05DE\u05D9\u05DC\u05D9\u05D5\u05DF
-    \u05E7\u05D9\u05DC\u05D5\u05DE\u05D8\u05E8\u05D9\u05DD."
-  - "\u05DC\u05DC\u05D0 \u05D0\u05D5\u05E8 \u05D4\u05E9\u05DE\u05E9 \u05DC\u05D0
-    \u05D4\u05D9\u05D5 \u05D4\u05E6\u05DE\u05D7\u05D9\u05DD \u05DE\u05E1\u05D5\u05D2\u05DC\u05D9\u05DD
-    \u05DC\u05D1\u05E6\u05E2 \u05E4\u05D5\u05B9\u05D8\u05D5\u05B9\u05E1\u05B4\u05D9\u05E0\u05B0\u05EA\u05B6\u05D6\u05B8\u05D4
-    \u05D5\u05DC\u05D9\u05D9\u05E6\u05E8 \u05D7\u05DE\u05E6\u05DF."
-  - "\u05DC\u05DC\u05D0 \u05D0\u05D5\u05E8 \u05D4\u05E9\u05DE\u05E9 \u05DC\u05D0
-    \u05D4\u05D9\u05D5 \u05D4\u05E6\u05DE\u05D7\u05D9\u05DD \u05DE\u05E1\u05D5\u05D2\u05DC\u05D9\u05DD
-    \u05DC\u05D1\u05E6\u05E2 \u05E4\u05D5\u05B9\u05D8\u05D5\u05B9\u05E1\u05B4\u05D9\u05E0\u05B0\u05EA\u05B6\u05D6\u05B8\u05D4
-    \u05D5\u05DC\u05D9\u05D9\u05E6\u05E8 \u05D7\u05DE\u05E6\u05DF."
-  - "\u05DC\u05D5\u05D7\u05D5\u05EA \u05E1\u05D5\u05DC\u05E8\u05D9\u05D9\u05DD \u05E7\u05D5\u05DC\u05D8\u05D9\u05DD
-    \u05D0\u05EA \u05E7\u05E8\u05E0\u05D9 \u05D4\u05E9\u05DE\u05E9, \u05D5\u05D4\u05D5\u05E4\u05DB\u05D9\u05DD
-    \u05D0\u05D5\u05EA\u05DF \u05DC\u05D0\u05E0\u05E8\u05D2\u05D9\u05D4 \u05D7\u05E9\u05DE\u05DC\u05D9\u05EA."
-  En_messages:
-  - Sunlight travels through the empty space between the Sun and Earth.
-  - "The rays move at the speed of light \u2013 approximately 300,000 kilometers
-    per second."
-  - "The rays move at the speed of light \u2013 approximately 300,000 kilometers
-    per second."
-  - Without sunlight, plants would not be able to perform photosynthesis and produce
-    oxygen.
-  - The warmth we feel when the sun shines comes from infrared radiation.
-  - Solar panels capture sunlight and convert it into electricity.
-  Ar_messages:
-  - " \u062A\u0645\u0631 \u0623\u0634\u0639\u0629 \u0627\u0644\u0636\u0648\u0621
-    \u0639\u0628\u0631 \u0627\u0644\u0641\u0636\u0627\u0621  \u0628\u064A\u0646 \u0627\u0644\u0634\u0645\u0633
-    \u0648\u0627\u0644\u0623\u0631\u0636."
-  - " \u062A\u062A\u062D\u0631\u0643 \u0627\u0644\u0623\u0634\u0639\u0629 \u0628\u0633\u0631\u0639\u0629
-    \u0627\u0644\u0636\u0648\u0621 \u062D\u0648\u0627\u0644\u064A 300,000 \u0643\u064A\u0644\u0648\u0645\u062A\u0631
-    \u0641\u064A \u0627\u0644\u062B\u0627\u0646\u064A\u0629."
-  - " \u0627\u0644\u0645\u0633\u0627\u0641\u0629 \u0628\u064A\u0646 \u0627\u0644\u0623\u0631\u0636
-    \u0648\u0627\u0644\u0634\u0645\u0633 \u0647\u064A 150 \u0645\u0644\u064A\u0648\u0646
-    \u0643\u064A\u0644\u0648\u0645\u062A\u0631."
-  - " \u0628\u062F\u0648\u0646 \u0636\u0648\u0621 \u0627\u0644\u0634\u0645\u0633
-    \u0644\u0646 \u062A\u0633\u062A\u0637\u064A\u0639 \u0627\u0644\u0646\u0628\u0627\u062A\u0627\u062A
-    \u0627\u0644\u0642\u064A\u0627\u0645 \u0628\u0639\u0645\u0644\u064A\u0629 \u0627\u0644\u062A\u0645\u062B\u064A\u0644
-    \u0627\u0644\u0636\u0648\u0626\u064A \u0648\u0625\u0646\u062A\u0627\u062C \u0627\u0644\u0623\u0643\u0633\u062C\u064A\u0646."
-  - '"   "'
-  - "\u062A\u0644\u062A\u0642\u0637 \u0627\u0644\u0623\u0644\u0648\u0627\u062D \u0627\u0644\u0634\u0645\u0633\u064A\u0629
-    \u0623\u0634\u0639\u0629 \u0627\u0644\u0634\u0645\u0633\u060C \u0648\u062A\u062D\u0648\u0644\u0647\u0627
-    \u0625\u0644\u0649 \u0637\u0627\u0642\u0629 \u0643\u0647\u0631\u0628\u0627\u0626\u064A\u0629."
-  totalDuration: 480
-  iterations: 6
-  fadeDuration: 1
 --- !u!1 &944398628
 GameObject:
   m_ObjectHideFlags: 0
@@ -2371,6 +2342,8 @@ GameObject:
   - component: {fileID: 1067524783}
   - component: {fileID: 1067524782}
   - component: {fileID: 1067524781}
+  - component: {fileID: 1067524785}
+  - component: {fileID: 1067524784}
   m_Layer: 5
   m_Name: TxtInfo _En
   m_TagString: Untagged
@@ -2394,7 +2367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19, y: -18}
+  m_AnchoredPosition: {x: -16, y: -24}
   m_SizeDelta: {x: 621.27, y: 84.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1067524781
@@ -2482,7 +2455,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -129.99747, y: -71.498825, z: -165.7472, w: -22.749344}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2510,6 +2483,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067524779}
   m_CullTransparentMesh: 1
+--- !u!114 &1067524784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067524779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a599d0254d2d84cb8c762d79e0b19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _messages:
+  - Sunlight travels through the empty space between the Sun and Earth
+  - "The rays move at the speed of light \u2013 approximately 300,000 kilometers
+    per second"
+  - The distance from the Earth to the Sun is 150 million kilometers
+  - Without sunlight, plants would not be able to perform photosynthesis and produce
+    oxygen
+  - The warmth we feel when the sun shines comes from infrared radiation
+  - Solar panels capture sunlight and convert it into electricity
+  - "About eight minutes passed \u2013 the sunbeam has reached Earth"
+  totalDuration: 5
+  iterations: 6
+  fadeDuration: 1
+--- !u!225 &1067524785
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067524779}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &1223729347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3320,6 +3330,8 @@ GameObject:
   - component: {fileID: 1663861840}
   - component: {fileID: 1663861842}
   - component: {fileID: 1663861841}
+  - component: {fileID: 1663861844}
+  - component: {fileID: 1663861843}
   m_Layer: 5
   m_Name: TxtInfo_He
   m_TagString: Untagged
@@ -3343,7 +3355,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -219, y: 7}
+  m_AnchoredPosition: {x: -219, y: 49}
   m_SizeDelta: {x: 197.3, y: 80.87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663861841
@@ -3433,7 +3445,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -363.0019, y: 0, z: -759.08374, w: -115.5697}
+  m_margin: {x: -138.75629, y: 0, z: -590.08655, w: -105.81976}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3454,6 +3466,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663861839}
   m_CullTransparentMesh: 1
+--- !u!114 &1663861843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663861839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a599d0254d2d84cb8c762d79e0b19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _messages:
+  - "\u05E7\u05E8\u05E0\u05D9 \u05D4\u05D0\u05D5\u05E8 \u05E2\u05D5\u05D1\u05E8\u05D5\u05EA
+    \u05D1\u05D7\u05DC\u05DC \u05D4\u05E8\u05D9\u05E7 \u05E9\u05D1\u05D9\u05DF \u05D4\u05E9\u05DE\u05E9
+    \u05DC\u05DB\u05D3\u05D5\u05E8 \u05D4\u05D0\u05E8\u05E5"
+  - "\u05D4\u05E7\u05E8\u05E0\u05D9\u05D9\u05DD \u05E0\u05E2\u05D5\u05EA \u05D1\u05DE\u05D4\u05D9\u05E8\u05D5\u05EA
+    \u05D4\u05D0\u05D5\u05E8 \u2013 \u05DB\u05BE300,000 \u05E7\u05D9\u05DC\u05D5\u05DE\u05D8\u05E8
+    \u05D1\u05E9\u05E0\u05D9\u05D9\u05D4"
+  - "\u05D4\u05DE\u05E8\u05D7\u05E7 \u05D1\u05D9\u05DF \u05DB\u05D3\u05D5\u05E8 \u05D4\u05D0\u05E8\u05E5
+    \u05DC\u05E9\u05DE\u05E9 \u05D4\u05D5\u05D0 150 \u05DE\u05D9\u05DC\u05D9\u05D5\u05DF
+    \u05E7\u05D9\u05DC\u05D5\u05DE\u05D8\u05E8\u05D9\u05DD"
+  - "\u05DC\u05DC\u05D0 \u05D0\u05D5\u05E8 \u05D4\u05E9\u05DE\u05E9 \u05DC\u05D0
+    \u05D4\u05D9\u05D5 \u05D4\u05E6\u05DE\u05D7\u05D9\u05DD \u05DE\u05E1\u05D5\u05D2\u05DC\u05D9\u05DD
+    \u05DC\u05D1\u05E6\u05E2 \u05E4\u05D5\u05B9\u05D8\u05D5\u05B9\u05E1\u05B4\u05D9\u05E0\u05B0\u05EA\u05B6\u05D6\u05B8\u05D4
+    \u05D5\u05DC\u05D9\u05D9\u05E6\u05E8 \u05D7\u05DE\u05E6\u05DF"
+  - "\u05D4\u05D7\u05D5\u05DD \u05E9\u05D0\u05E0\u05D5 \u05D7\u05E9\u05D9\u05DD \u05DB\u05E9\u05D4\u05E9\u05DE\u05E9
+    \u05DE\u05D0\u05D9\u05E8\u05D4 \u05E2\u05DC\u05D9\u05E0\u05D5 \u05E0\u05D5\u05D1\u05E2
+    \u05DE\u05E7\u05E8\u05E0\u05D9 \u05D4\u05E9\u05DE\u05E9 \u05D1\u05D8\u05D5\u05D5\u05D7
+    \u05D4\u05EA\u05EA\u05BE\u05D0\u05D3\u05D5\u05DD"
+  - "\u05DC\u05D5\u05D7\u05D5\u05EA \u05E1\u05D5\u05DC\u05E8\u05D9\u05D9\u05DD \u05E7\u05D5\u05DC\u05D8\u05D9\u05DD
+    \u05D0\u05EA \u05E7\u05E8\u05E0\u05D9 \u05D4\u05E9\u05DE\u05E9, \u05D5\u05D4\u05D5\u05E4\u05DB\u05D9\u05DD
+    \u05D0\u05D5\u05EA\u05DF \u05DC\u05D0\u05E0\u05E8\u05D2\u05D9\u05D4 \u05D7\u05E9\u05DE\u05DC\u05D9\u05EA"
+  - "\u05DB\u05E9\u05DE\u05D5\u05E0\u05D4 \u05D3\u05E7\u05D5\u05EA \u05D7\u05DC\u05E4\u05D5
+    - \u05E7\u05E8\u05DF \u05D4\u05E9\u05DE\u05E9 \u05D4\u05D2\u05D9\u05E2\u05D4
+    \u05DC\u05DB\u05D3\u05D5\u05E8 \u05D4\u05D0\u05E8\u05E5"
+  totalDuration: 5
+  iterations: 6
+  fadeDuration: 1
+--- !u!225 &1663861844
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663861839}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1676885691
 GameObject:
   m_ObjectHideFlags: 0
@@ -4768,7 +4831,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8bc752276233e40ab36b6370cfaa51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  localizeEvent: {fileID: 0}
 --- !u!114 &2098756448
 MonoBehaviour:
   m_ObjectHideFlags: 0
