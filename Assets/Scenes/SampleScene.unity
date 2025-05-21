@@ -247,8 +247,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u05E9\u05DC\u05D7\u05D5 \u05E7\u05E8\u05DF \u05E9\u05DE\u05E9"
   m_isRightToLeft: 1
-  m_fontAsset: {fileID: 11400000, guid: 743ff6528cc67d24bbc54d2969f0af93, type: 2}
-  m_sharedMaterial: {fileID: -6212919841344071475, guid: 743ff6528cc67d24bbc54d2969f0af93, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 54ac8b55fdb41eb46bdc9f6909973ee2, type: 2}
+  m_sharedMaterial: {fileID: 2449554195858161683, guid: 54ac8b55fdb41eb46bdc9f6909973ee2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-  preserveNumbers: 0
+  preserveNumbers: 1
   farsi: 1
   originalText: "\u05E9\u05DC\u05D7\u05D5 \u05E7\u05E8\u05DF \u05E9\u05DE\u05E9"
   fixTags: 1
@@ -1224,7 +1224,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 1.4914494, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
   preserveNumbers: 0
@@ -1661,7 +1661,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &746656624
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1774,7 +1774,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-  preserveNumbers: 0
+  preserveNumbers: 1
   farsi: 1
   originalText: "\u0645\u0631\u062A \u062D\u0648\u0627\u0644\u064A \u062B\u0645\u0627\u0646\u064A
     \u062F\u0642\u0627\u0626\u0642 - \n\u0648\u0635\u0644 \u0634\u0639\u0627\u0639
@@ -2368,7 +2368,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -16, y: -24}
-  m_SizeDelta: {x: 621.27, y: 84.79}
+  m_SizeDelta: {x: 565.82, y: 97.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1067524781
 MonoBehaviour:
@@ -2392,8 +2392,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "About eight minutes passed \u2013 \nthe sunbeam has reached Earth.\r\n\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 54ac8b55fdb41eb46bdc9f6909973ee2, type: 2}
+  m_sharedMaterial: {fileID: 2449554195858161683, guid: 54ac8b55fdb41eb46bdc9f6909973ee2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3232,8 +3232,8 @@ MonoBehaviour:
     \u05D0\u05D5\u05E8 \u05DE\u05D4\u05E9\u05DE\u05E9 \u05DC\u05D4\u05D2\u05D9\u05E2
     \u05DC\u05DB\u05D3\u05D5\u05E8 \u05D4\u05D0\u05E8\u05E5?"
   m_isRightToLeft: 1
-  m_fontAsset: {fileID: 11400000, guid: 743ff6528cc67d24bbc54d2969f0af93, type: 2}
-  m_sharedMaterial: {fileID: -6212919841344071475, guid: 743ff6528cc67d24bbc54d2969f0af93, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 54ac8b55fdb41eb46bdc9f6909973ee2, type: 2}
+  m_sharedMaterial: {fileID: 2449554195858161683, guid: 54ac8b55fdb41eb46bdc9f6909973ee2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3301,7 +3301,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-  preserveNumbers: 0
+  preserveNumbers: 1
   farsi: 1
   originalText: "\u05DB\u05DE\u05D4 \u05D6\u05DE\u05DF \u05E0\u05D3\u05E8\u05E9 \u05DC\u05E7\u05E8\u05DF
     \u05D0\u05D5\u05E8 \u05DE\u05D4\u05E9\u05DE\u05E9 \u05DC\u05D4\u05D2\u05D9\u05E2
@@ -3338,7 +3338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1663861840
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3380,7 +3380,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u05DB\u05E9\u05DE\u05D5\u05E0\u05D4 \u05D3\u05E7\u05D5\u05EA \u05D7\u05DC\u05E4\u05D5
     - \u05E7\u05E8\u05DF \u05D4\u05E9\u05DE\u05E9 \n\u05D4\u05D2\u05D9\u05E2\u05D4
-    \u05DC\u05DB\u05D3\u05D5\u05E8 \u05D4\u05D0\u05E8\u05E5"
+    \u05DC\u05DB\u05D3\u05D5\u05E8 \u05D4\u05D0\u05E8\u05E5 9876543221"
   m_isRightToLeft: 1
   m_fontAsset: {fileID: 11400000, guid: 743ff6528cc67d24bbc54d2969f0af93, type: 2}
   m_sharedMaterial: {fileID: -6212919841344071475, guid: 743ff6528cc67d24bbc54d2969f0af93, type: 2}
@@ -3451,13 +3451,13 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-  preserveNumbers: 0
-  farsi: 1
+  preserveNumbers: 1
+  farsi: 0
   originalText: "\u05DB\u05E9\u05DE\u05D5\u05E0\u05D4 \u05D3\u05E7\u05D5\u05EA \u05D7\u05DC\u05E4\u05D5
     - \u05E7\u05E8\u05DF \u05D4\u05E9\u05DE\u05E9 \n\u05D4\u05D2\u05D9\u05E2\u05D4
-    \u05DC\u05DB\u05D3\u05D5\u05E8 \u05D4\u05D0\u05E8\u05E5"
-  fixTags: 1
-  forceFix: 1
+    \u05DC\u05DB\u05D3\u05D5\u05E8 \u05D4\u05D0\u05E8\u05E5 1223456789"
+  fixTags: 0
+  forceFix: 0
 --- !u!222 &1663861842
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3988,7 +3988,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-  preserveNumbers: 0
+  preserveNumbers: 1
   farsi: 1
   originalText: "\u0643\u0645 \u0645\u0646 \u0627\u0644\u0648\u0642\u062A \u062A\u062D\u062A\u0627\u062C
     \u0623\u0634\u0639\u0629 \u0627\u0644\u0636\u0648\u0621 \u0645\u0646 \u0627\u0644\u0634\u0645\u0633
@@ -4369,7 +4369,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "How long does it take for a sunbeam \n\\rto reach Earth?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 54ac8b55fdb41eb46bdc9f6909973ee2, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4435,7 +4435,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &2094641580
@@ -4497,7 +4497,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Send a sunbeam
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 54ac8b55fdb41eb46bdc9f6909973ee2, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4563,7 +4563,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2094641583
