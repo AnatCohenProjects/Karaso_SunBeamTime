@@ -1,9 +1,18 @@
 ﻿using UnityEngine;
 using DG.Tweening;
+using RTLTMPro;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine.Localization.Settings;
 
 [RequireComponent(typeof(RectTransform))]
 public class InfoBox : MonoBehaviour
 {
+    public RTLTextMeshPro textHE;
+    public TMP_Text textEN;
+    public RTLTextMeshPro textAR;
+
+
     [Header("Object")]
     public RectTransform panel;
 
@@ -43,4 +52,41 @@ public class InfoBox : MonoBehaviour
         panel.DOAnchorPosY(hiddenY, duration)
              .SetEase(Ease.InOutQuad);
     }
+
+    public void SetLanguage(string code)
+    {
+        bool isHE = code == "he";
+        bool isEN = code == "en";
+        bool isAR = code == "ar";
+
+        textHE.GetComponent<CanvasGroup>().alpha = (isHE) ? 1f : 0f;
+        textEN.GetComponent<CanvasGroup>().alpha = (isEN) ? 1f : 0f;
+        textAR.GetComponent<CanvasGroup>().alpha = (isAR) ? 1f : 0f;
+
+        textHE.GetComponent<BreathingText>().IsActive = isHE;
+        textEN.GetComponent<BreathingText>().IsActive = isEN;
+        textAR.GetComponent<BreathingText>().IsActive = isAR;
+
+    }
+
+    void Start()
+    {
+        // מאתחל לשפה ששמורה ב‑PlayerPrefs או 'he' כברירת מחדל
+        var code = PlayerPrefs.GetString("lang", "he");
+        SetLanguage(code);
+    }
+    void OnEnable()
+    {
+        LanguageSelector.OnLanguageChanged += SetLanguage;
+        SetLanguage(LocalizationSettings.SelectedLocale.Formatter.ToString());
+    }
+
+    void OnDisable()
+    {
+        LanguageSelector.OnLanguageChanged -= SetLanguage;
+    }
+    
+    
+   
+
 }

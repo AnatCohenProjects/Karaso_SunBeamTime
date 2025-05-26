@@ -14,27 +14,30 @@ public class CountDownTimer : MonoBehaviour
     {
         IsStartTimer = true;
         clockText = GetComponent<TextMeshProUGUI>();
-        timeRemaining = minutes * 60;
+        clockText.text = "00:00";
+        timeRemaining = 0;//minutes * 60;
         maxTime =  minutes * 60;
 
     }
     public float GetProgressionPrecentage()
     {
-        return (maxTime - timeRemaining) /maxTime  ;
+        return (timeRemaining) /maxTime  ;
     }
 
     void Update()
     {
         if (IsStartTimer)
         {
-            if (timeRemaining > 0)
+            if (timeRemaining <= maxTime)
             {
-                timeRemaining -= Time.deltaTime;
+                timeRemaining += Time.deltaTime;
                 UpdateClockDisplay(timeRemaining);
             }
             else
             {
-                clockText.text = "00:00"; // Countdown has reached 0
+                 UpdateClockDisplay(maxTime);
+
+                //clockText.text = "08:00"; // Countdown has reached 0
             }
         }
     }

@@ -4,6 +4,7 @@ using DG.Tweening;
 using UnityEngine.Localization.Settings;
 using System.Collections;
 using RTLTMPro;
+using NUnit.Framework;
 
 [RequireComponent(typeof(CanvasGroup))]
 public class BreathingText : MonoBehaviour
@@ -22,6 +23,13 @@ public class BreathingText : MonoBehaviour
     public float fadeDuration = 1f;
 
     private CanvasGroup _canvasGroup;
+    private bool _isActive;
+    public bool IsActive
+    {
+        get => _isActive;
+        set => _isActive = value;
+    }
+
     void Awake()
     {
         // הוספת CanvasGroup אם אין
@@ -30,7 +38,7 @@ public class BreathingText : MonoBehaviour
             _canvasGroup = gameObject.AddComponent<CanvasGroup>();
 
     }
-
+   
     void Start()
     {
        
@@ -44,14 +52,38 @@ public class BreathingText : MonoBehaviour
         for (int i = 0; i < iterations; i++)
         {
             RTLTextMeshPro rtlTextBox = GetComponent<RTLTextMeshPro>();
-            if (rtlTextBox != null ) // hebrew of arabic
+            if (rtlTextBox != null) // hebrew of arabic
+            {
                 rtlTextBox.text = _messages.Length > 0 ? _messages[i % _messages.Length] : "";
+                if (i == iterations - 1)
+                {
+                    rtlTextBox.fontSize = 47;
+                    rtlTextBox.fontStyle = FontStyles.Bold;
+                }
+                else
+                {
+                    rtlTextBox.fontSize = 40;
+                    rtlTextBox.fontStyle = FontStyles.Normal;
+                }
+                rtlTextBox.ForceMeshUpdate();
+            }
             else // english
             {
                 TextMeshProUGUI ltrTextBox = GetComponent<TextMeshProUGUI>();
-                if(ltrTextBox != null )
+                if (ltrTextBox != null)
                 {
                     ltrTextBox.text = _messages.Length > 0 ? _messages[i % _messages.Length] : "";
+                    if (i == iterations - 1)
+                    {
+                        ltrTextBox.fontSize = 47;
+                        ltrTextBox.fontStyle = FontStyles.Bold;
+                    }
+                    else
+                    {
+                        ltrTextBox.fontSize = 40;
+                        ltrTextBox.fontStyle = FontStyles.Normal;
+                    }
+                    ltrTextBox.ForceMeshUpdate();
                 }
             }
            
@@ -63,6 +95,7 @@ public class BreathingText : MonoBehaviour
             if (displayTime > 0f)
                 yield return new WaitForSeconds(displayTime);
 
+            if( i < iterations - 1)
             // פייד אאוט
             yield return StartCoroutine(Fade(1f, 0f, fadeDuration));
         }
@@ -70,16 +103,21 @@ public class BreathingText : MonoBehaviour
 
     IEnumerator Fade(float from, float to, float duration)
     {
+       
         float elapsed = 0f;
-        _canvasGroup.alpha = from;
+        if (_isActive)
+            _canvasGroup.alpha = from;
 
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
-            _canvasGroup.alpha = Mathf.Lerp(from, to, elapsed / duration);
+            if (_isActive)
+                _canvasGroup.alpha = Mathf.Lerp(from, to, elapsed / duration);
             yield return null;
         }
-        _canvasGroup.alpha = to;
+        if (_isActive)
+            _canvasGroup.alpha = to;
+        
     }
     public void Startanimation()
     {

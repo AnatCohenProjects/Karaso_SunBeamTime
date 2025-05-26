@@ -2249,7 +2249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &746656624
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2264,10 +2264,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 935842800}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9, y: -21}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: 0, y: -77}
+  m_SizeDelta: {x: 200, y: 312}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &746656625
 MonoBehaviour:
@@ -2356,7 +2356,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -281.75317, y: 0, z: -294.60828, w: 152.57724}
+  m_margin: {x: -306.7694, y: 0, z: -294.60828, w: 152.57724}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2403,15 +2403,19 @@ MonoBehaviour:
     \u0644\u0646 \u062A\u0633\u062A\u0637\u064A\u0639 \u0627\u0644\u0646\u0628\u0627\u062A\u0627\u062A
     \u0627\u0644\u0642\u064A\u0627\u0645 \u0628\u0639\u0645\u0644\u064A\u0629 \u0627\u0644\u062A\u0645\u062B\u064A\u0644
     \u0627\u0644\u0636\u0648\u0626\u064A \u0648\u0625\u0646\u062A\u0627\u062C \u0627\u0644\u0623\u0643\u0633\u062C\u064A\u0646"
-  - 
+  - "\u0627\u0644\u062D\u0631\u0627\u0631\u0629 \u0627\u0644\u062A\u064A \u0646\u0634\u0639\u0631
+    \u0628\u0647\u0627 \u0639\u0646\u062F\u0645\u0627 \u062A\u0634\u0631\u0642 \u0627\u0644\u0634\u0645\u0633
+    \u0639\u0644\u064A\u0646\u0627 \u062A\u0623\u062A\u064A \u0645\u0646 \u0623\u0634\u0639\u0629
+    \u0627\u0644\u0634\u0645\u0633 \u0641\u064A \u0646\u0637\u0627\u0642 \u0627\u0644\u0623\u0634\u0639\u0629
+    \u062A\u062D\u062A \u0627\u0644\u062D\u0645\u0631\u0627\u0621."
   - "\u062A\u0644\u062A\u0642\u0637 \u0627\u0644\u0623\u0644\u0648\u0627\u062D \u0627\u0644\u0634\u0645\u0633\u064A\u0629
     \u0623\u0634\u0639\u0629 \u0627\u0644\u0634\u0645\u0633\u060C \u0648\u062A\u062D\u0648\u0644\u0647\u0627
     \u0625\u0644\u0649 \u0637\u0627\u0642\u0629 \u0643\u0647\u0631\u0628\u0627\u0626\u064A\u0629"
   - "\u0645\u0631\u062A \u062D\u0648\u0627\u0644\u064A \u062B\u0645\u0627\u0646\u064A
     \u062F\u0642\u0627\u0626\u0642 - \u0648\u0635\u0644 \u0634\u0639\u0627\u0639
     \u0627\u0644\u0634\u0645\u0633 \u0625\u0644\u0649 \u0627\u0644\u0623\u0631\u0636"
-  totalDuration: 5
-  iterations: 6
+  totalDuration: 10
+  iterations: 7
   fadeDuration: 1
 --- !u!225 &746656628
 CanvasGroup:
@@ -2657,7 +2661,6 @@ GameObject:
   m_Component:
   - component: {fileID: 935842800}
   - component: {fileID: 935842802}
-  - component: {fileID: 935842801}
   - component: {fileID: 935842804}
   - component: {fileID: 935842803}
   m_Layer: 5
@@ -2689,24 +2692,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2, y: -1209}
   m_SizeDelta: {x: 1004, y: 225}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &935842801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 935842799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23f70b5a6a7109c4cb3b1765ee03d5b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textHE: {fileID: 1663861841}
-  textEN: {fileID: 1067524781}
-  textAR: {fileID: 746656625}
-  textHE_Shadow: {fileID: 0}
-  textEN_Shadow: {fileID: 0}
-  textAR_Shadow: {fileID: 0}
 --- !u!222 &935842802
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2757,6 +2742,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26f799ede8bc864792ab403c002f9ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textHE: {fileID: 1663861841}
+  textEN: {fileID: 1067524781}
+  textAR: {fileID: 746656625}
   panel: {fileID: 935842800}
   duration: 0.5
   visibleY: -812
@@ -2937,7 +2925,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1067524780}
   - component: {fileID: 1067524783}
-  - component: {fileID: 1067524782}
   - component: {fileID: 1067524781}
   - component: {fileID: 1067524785}
   - component: {fileID: 1067524784}
@@ -2947,7 +2934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1067524780
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2964,8 +2951,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16, y: -24}
-  m_SizeDelta: {x: 523.96, y: 104.64}
+  m_AnchoredPosition: {x: 2, y: -22}
+  m_SizeDelta: {x: 197.3, y: 80.87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1067524781
 MonoBehaviour:
@@ -3052,26 +3039,12 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -105.70706, y: -71.498825, z: -135.38403, w: -22.749344}
+  m_margin: {x: -339.1914, y: -71.498825, z: -331.34387, w: -22.749344}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1067524782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067524779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
-  m_VerticalFit: 2
 --- !u!222 &1067524783
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3099,11 +3072,11 @@ MonoBehaviour:
   - The distance from the Earth to the Sun is 150 million kilometers
   - Without sunlight, plants would not be able to perform photosynthesis and produce
     oxygen
-  - The warmth we feel when the sun shines comes from infrared radiation
+  - The warmth we feel when the sun shines comes from infrared radiation.
   - Solar panels capture sunlight and convert it into electricity
   - "About eight minutes passed \u2013 the sunbeam has reached Earth"
-  totalDuration: 5
-  iterations: 6
+  totalDuration: 10
+  iterations: 7
   fadeDuration: 1
 --- !u!225 &1067524785
 CanvasGroup:
@@ -4021,7 +3994,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 605162050437240712, guid: 464d38174f411f04c9acc9bba8b5b0bd, type: 3}
+  m_Sprite: {fileID: 7162605309639673559, guid: 133ffa39cea66f744882c02292600327, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4042,7 +4015,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 193.3, y: -0.4, z: 0}
-  m_LocalScale: {x: 20.1, y: 20.1, z: 20.1}
+  m_LocalScale: {x: 16.5, y: 16.5, z: 16.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -4313,7 +4286,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -4392,18 +4365,19 @@ MonoBehaviour:
     \u05D4\u05D9\u05D5 \u05D4\u05E6\u05DE\u05D7\u05D9\u05DD \u05DE\u05E1\u05D5\u05D2\u05DC\u05D9\u05DD
     \u05DC\u05D1\u05E6\u05E2 \u05E4\u05D5\u05B9\u05D8\u05D5\u05B9\u05E1\u05B4\u05D9\u05E0\u05B0\u05EA\u05B6\u05D6\u05B8\u05D4
     \u05D5\u05DC\u05D9\u05D9\u05E6\u05E8 \u05D7\u05DE\u05E6\u05DF"
+  - "\u05DC\u05DC\u05D0 \u05D0\u05D5\u05E8 \u05D4\u05E9\u05DE\u05E9 \u05DC\u05D0
+    \u05D4\u05D9\u05D5 \u05D4\u05E6\u05DE\u05D7\u05D9\u05DD \u05DE\u05E1\u05D5\u05D2\u05DC\u05D9\u05DD
+    \u05DC\u05D1\u05E6\u05E2 \u05E4\u05D5\u05B9\u05D8\u05D5\u05B9\u05E1\u05B4\u05D9\u05E0\u05B0\u05EA\u05B6\u05D6\u05B8\u05D4
+    \u05D5\u05DC\u05D9\u05D9\u05E6\u05E8 \u05D7\u05DE\u05E6\u05DF."
   - "\u05D4\u05D7\u05D5\u05DD \u05E9\u05D0\u05E0\u05D5 \u05D7\u05E9\u05D9\u05DD \u05DB\u05E9\u05D4\u05E9\u05DE\u05E9
     \u05DE\u05D0\u05D9\u05E8\u05D4 \u05E2\u05DC\u05D9\u05E0\u05D5 \u05E0\u05D5\u05D1\u05E2
     \u05DE\u05E7\u05E8\u05E0\u05D9 \u05D4\u05E9\u05DE\u05E9 \u05D1\u05D8\u05D5\u05D5\u05D7
-    \u05D4\u05EA\u05EA\u05BE\u05D0\u05D3\u05D5\u05DD"
-  - "\u05DC\u05D5\u05D7\u05D5\u05EA \u05E1\u05D5\u05DC\u05E8\u05D9\u05D9\u05DD \u05E7\u05D5\u05DC\u05D8\u05D9\u05DD
-    \u05D0\u05EA \u05E7\u05E8\u05E0\u05D9 \u05D4\u05E9\u05DE\u05E9, \u05D5\u05D4\u05D5\u05E4\u05DB\u05D9\u05DD
-    \u05D0\u05D5\u05EA\u05DF \u05DC\u05D0\u05E0\u05E8\u05D2\u05D9\u05D4 \u05D7\u05E9\u05DE\u05DC\u05D9\u05EA"
+    \u05D4\u05EA\u05EA\u05BE\u05D0\u05D3\u05D5\u05DD."
   - "\u05DB\u05E9\u05DE\u05D5\u05E0\u05D4 \u05D3\u05E7\u05D5\u05EA \u05D7\u05DC\u05E4\u05D5
     - \u05E7\u05E8\u05DF \u05D4\u05E9\u05DE\u05E9 \u05D4\u05D2\u05D9\u05E2\u05D4
     \u05DC\u05DB\u05D3\u05D5\u05E8 \u05D4\u05D0\u05E8\u05E5"
-  totalDuration: 5
-  iterations: 6
+  totalDuration: 10
+  iterations: 7
   fadeDuration: 1
 --- !u!225 &1663861844
 CanvasGroup:
@@ -4953,7 +4927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCountDownBtn: {fileID: 2098756442}
   spriteRay: {fileID: 0}
-  rayDuration: 1
+  rayDuration: 8
   countDownTimer: {fileID: 174624700}
   rayMask: {fileID: 270258169}
   infoBox: {fileID: 935842804}
@@ -5335,7 +5309,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &2094641580

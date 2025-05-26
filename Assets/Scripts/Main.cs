@@ -83,7 +83,8 @@ public class Main : MonoBehaviour
     {
         float percentage = countDownTimer.GetProgressionPrecentage();
         percentage = Mathf.Clamp01(percentage);
- 
+       // Debug.Log("precentage"+ percentage);
+
         // 2. חשבי רוחב מקסימלי שברצונך להגיע אליו
         float maxWidth = 2020f; // או כל רוחב אחר שמתאים לך
 
