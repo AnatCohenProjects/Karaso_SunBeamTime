@@ -51,6 +51,10 @@ public class InfoBox : MonoBehaviour
         panel.DOKill();
         panel.DOAnchorPosY(hiddenY, duration)
              .SetEase(Ease.InOutQuad);
+
+        textHE.GetComponent<BreathingText>().Stopanimation();
+        textEN.GetComponent<BreathingText>().Stopanimation();
+        textAR.GetComponent<BreathingText>().Stopanimation();
     }
 
     public void SetLanguage(string code)

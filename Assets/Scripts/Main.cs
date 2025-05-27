@@ -11,10 +11,9 @@ using UnityEngine.Localization.Settings;
 public class Main : MonoBehaviour
 {
     [SerializeField] Button startCountDownBtn;
-    [SerializeField] SpriteRenderer spriteRay;
     [SerializeField] int rayDuration;//in minutes
     [SerializeField] CountDownTimer countDownTimer;
-    [SerializeField] Image rayMask;
+    [SerializeField] GameObject ray;
     [SerializeField] InfoBox infoBox;
     private RectTransform rayMaskRectTransform;
     [SerializeField] Button resetBtn;
@@ -32,7 +31,7 @@ public class Main : MonoBehaviour
         startCountDownBtn.onClick.AddListener(StartStopwatch);
         resetBtn.onClick.AddListener(ResetGame);
 
-        rayMaskRectTransform = rayMask.GetComponent<RectTransform>();
+     
     }
 
 
@@ -52,10 +51,9 @@ public class Main : MonoBehaviour
         countDownTimer.gameObject.SetActive(false);
         startCountDownBtn.gameObject.SetActive(true);
 
-        float maxWidth = 2020f; // או כל רוחב אחר שמתאים לך
-        var sd = rayMaskRectTransform.sizeDelta;
-        sd.x = Mathf.Lerp(0f, maxWidth, 0);
-        rayMaskRectTransform.sizeDelta = sd;
+        Vector3 newScale = ray.gameObject.transform.localScale;
+        newScale.x = 0;
+        ray.gameObject.transform.localScale = newScale;
 
     }
 
@@ -86,13 +84,11 @@ public class Main : MonoBehaviour
        // Debug.Log("precentage"+ percentage);
 
         // 2. חשבי רוחב מקסימלי שברצונך להגיע אליו
-        float maxWidth = 2020f; // או כל רוחב אחר שמתאים לך
+        float maxScale = 20f; // או כל רוחב אחר שמתאים לך
 
-        // 3. עדכני את ה‑RectTransform על ציר ה‑X
-        //    אפשר בגישה הישנה:
-        var sd = rayMaskRectTransform.sizeDelta;
-        sd.x = Mathf.Lerp(0f, maxWidth, percentage);
-        rayMaskRectTransform.sizeDelta = sd;
-        
+        Vector3 newScale = ray.gameObject.transform.localScale;
+        newScale.x = maxScale * percentage;
+        ray.gameObject.transform.localScale = newScale;
+
     }
 }

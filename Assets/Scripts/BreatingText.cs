@@ -23,6 +23,7 @@ public class BreathingText : MonoBehaviour
     public float fadeDuration = 1f;
 
     private CanvasGroup _canvasGroup;
+    Coroutine fadeCoroutine;
     private bool _isActive;
     public bool IsActive
     {
@@ -121,49 +122,11 @@ public class BreathingText : MonoBehaviour
     }
     public void Startanimation()
     {
-        StartCoroutine(PlayFadeSequence());
+        fadeCoroutine = StartCoroutine(PlayFadeSequence());
     }
-    /* void Awake()
-     {
-         // ensure we have a CanvasGroup
-         _canvasGroup = GetComponent<CanvasGroup>();
-         if (_canvasGroup == null)
-             _canvasGroup = gameObject.AddComponent<CanvasGroup>();
+    public void Stopanimation()
+    {
+        StopCoroutine(fadeCoroutine);
+    }
 
-         // start invisible
-         _canvasGroup.alpha = 0;
-     }
-
-     void Start()
-     {
-         // compute how long we display each message
-         float cycleTime = totalDuration / iterations;
-         float displayTime = Mathf.Max(0, cycleTime - 2 * fadeDuration);
-         var seq = DOTween.Sequence();
-
-         for (int i = 0; i < iterations; i++)
-         {
-             int idx = i % He_messages.Length;
-
-             // fade out (breathe out)
-             seq.Append(_canvasGroup.DOFade(0f, fadeDuration).SetEase(Ease.InOutSine));
-
-             // switch text at fully hidden
-             string code = LocalizationSettings.SelectedLocale.Identifier.Code;
-             if(code == "he")
-             seq.AppendCallback(() => textBox.text = He_messages[idx]);
-             else if (code == "en")
-                 seq.AppendCallback(() => textBox.text = En_messages[idx]);
-             else if (code == "ar")
-                 seq.AppendCallback(() => textBox.text = Ar_messages[idx]);
-             // fade in (breathe in)
-             seq.Append(_canvasGroup.DOFade(1f, fadeDuration).SetEase(Ease.InOutSine));
-
-             // hold before next cycle
-             if (i < iterations - 1)
-                 seq.AppendInterval(displayTime);
-         }
-
-         seq.Play();
-     }*/
 }
