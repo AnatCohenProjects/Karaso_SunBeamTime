@@ -18,6 +18,8 @@ public class Main : MonoBehaviour
     private RectTransform rayMaskRectTransform;
     [SerializeField] Button resetBtn;
     [SerializeField] GameObject title;
+    [SerializeField] private Transform particleEffect;
+    [SerializeField] private SpriteRenderer beamSpriteRenderer;
 
     private float timeElapsed = 0f;
     private bool isRunning = false;
@@ -90,5 +92,16 @@ public class Main : MonoBehaviour
         newScale.x = maxScale * percentage;
         ray.gameObject.transform.localScale = newScale;
 
+        //        // עדכן את מיקום אפקט החלקיקים
+        float originalWidth = beamSpriteRenderer.sprite.bounds.size.x;
+
+        // Scale נוכחי
+        float scaleX = transform.localScale.x;
+
+        // מרחק מהפיווט הימני לקצה השמאלי
+        float leftEdgeLocalX = -originalWidth * scaleX;
+
+        // מקם את אפקט החלקיקים בקצה השמאלי
+        particleEffect.localPosition = new Vector3(leftEdgeLocalX, 0f, 0f);
     }
 }
