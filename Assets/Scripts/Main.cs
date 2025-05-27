@@ -33,11 +33,11 @@ public class Main : MonoBehaviour
         startCountDownBtn.onClick.AddListener(StartStopwatch);
         resetBtn.onClick.AddListener(ResetGame);
 
-     
+
     }
-
-
-    void Update()
+   
+    
+        void Update()
     {
         if (isRunning)
         {

@@ -25,6 +25,8 @@ public class InfoBox : MonoBehaviour
     [Header("Y when hide")]
     public float hiddenY = -500f;
 
+    public CountDownTimer countDownTimer;
+
     void Reset()
     {
 

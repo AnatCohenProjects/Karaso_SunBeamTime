@@ -1,3 +1,5 @@
+using Mono.Cecil.Cil;
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +10,7 @@ public class CountDownTimer : MonoBehaviour
     private float timeRemaining; // Time remaining in seconds
     private bool IsStartTimer = false;
     private int maxTime;
+    public static event Action OnTimerStopped;
 
     // Set countdown duration in seconds
     public void StartCountdown(int minutes)
@@ -37,6 +40,7 @@ public class CountDownTimer : MonoBehaviour
             {
                  UpdateClockDisplay(maxTime);
 
+                //OnTimerStopped?.Invoke();
                 //clockText.text = "08:00"; // Countdown has reached 0
             }
         }
