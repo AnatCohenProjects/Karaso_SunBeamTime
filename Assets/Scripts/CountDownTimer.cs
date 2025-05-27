@@ -37,10 +37,11 @@ public class CountDownTimer : MonoBehaviour
                 UpdateClockDisplay(timeRemaining);
             }
             else
-            {
+            { 
+                IsStartTimer = false;
                  UpdateClockDisplay(maxTime);
 
-                //OnTimerStopped?.Invoke();
+                OnTimerStopped?.Invoke();
                 //clockText.text = "08:00"; // Countdown has reached 0
             }
         }

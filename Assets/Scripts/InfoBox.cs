@@ -85,14 +85,20 @@ public class InfoBox : MonoBehaviour
     {
         LanguageSelector.OnLanguageChanged += SetLanguage;
         SetLanguage(LocalizationSettings.SelectedLocale.Formatter.ToString());
+        CountDownTimer.OnTimerStopped += SetStoppedTimer;
     }
 
     void OnDisable()
     {
         LanguageSelector.OnLanguageChanged -= SetLanguage;
+        CountDownTimer.OnTimerStopped -= SetStoppedTimer;
     }
-    
-    
-   
 
+    public void SetStoppedTimer()
+    {
+        textHE.GetComponent<BreathingText>().SetStopFadeSequence();
+        textEN.GetComponent<BreathingText>().SetStopFadeSequence();
+        textAR.GetComponent<BreathingText>().SetStopFadeSequence();
+
+    }
 }

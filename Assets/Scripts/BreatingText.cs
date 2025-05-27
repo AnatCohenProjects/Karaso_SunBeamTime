@@ -80,12 +80,14 @@ public class BreathingText : MonoBehaviour
       IEnumerator PlayFadeSequence()
       {
         int iterations = _messages.Length - 1;
-          while (!stop)
+         RTLTextMeshPro rtlTextBox = GetComponent<RTLTextMeshPro>();
+        TextMeshProUGUI ltrTextBox = GetComponent<TextMeshProUGUI>();
+        while (!stop)
           {
               // לולאה פנימית – לדוגמה 5 איטרציות
               for (int i = 0; i < iterations ; i++)
               {
-                 RTLTextMeshPro rtlTextBox = GetComponent<RTLTextMeshPro>();
+                
                 if (rtlTextBox != null) // hebrew of arabic
                 {
                     rtlTextBox.text = _messages.Length > 0 ? _messages[i % _messages.Length] : "";
@@ -93,22 +95,22 @@ public class BreathingText : MonoBehaviour
                         rtlTextBox.fontSize = 40;
                         rtlTextBox.fontStyle = FontStyles.Normal;
                     
-                    rtlTextBox.ForceMeshUpdate();
-            }
-            else // english
-            {
-                TextMeshProUGUI ltrTextBox = GetComponent<TextMeshProUGUI>();
-                if (ltrTextBox != null)
+                        rtlTextBox.ForceMeshUpdate();
+                }
+                else // english
                 {
-                       ltrTextBox.text = _messages.Length > 0 ? _messages[i % _messages.Length] : "";
+               
+                    if (ltrTextBox != null)
+                    {
+                           ltrTextBox.text = _messages.Length > 0 ? _messages[i % _messages.Length] : "";
 
-                            ltrTextBox.fontSize = 40;
-                            ltrTextBox.fontStyle = FontStyles.Normal;
+                                ltrTextBox.fontSize = 40;
+                                ltrTextBox.fontStyle = FontStyles.Normal;
 
                
-                    ltrTextBox.ForceMeshUpdate();
-                }
-            }
+                        ltrTextBox.ForceMeshUpdate();
+                    }
+                 }
            
             // פייד אין
             yield return StartCoroutine(Fade(0f, 1f, fadeDuration));
@@ -118,46 +120,50 @@ public class BreathingText : MonoBehaviour
             if (displayTime > 0f)
                 yield return new WaitForSeconds(displayTime);
 
-            if( i < iterations - 1)
+           // if( i < iterations - 1)
             // פייד אאוט
             yield return StartCoroutine(Fade(1f, 0f, fadeDuration));
                   yield return new WaitForSeconds(0.5f); // זמן בין איטרציות
-              }
 
-              // בדיקה אחרי כל מחזור של הלולאה
-              if (isTimerStopped)
-              {
-                stop = true;
-                RTLTextMeshPro rtlTextBox = GetComponent<RTLTextMeshPro>();
-                if (rtlTextBox != null) // hebrew of arabic
+
+                // בדיקה אחרי כל מחזור של הלולאה
+                if (isTimerStopped)
                 {
-                    rtlTextBox.text = _messages.Length > 0 ? _messages[ _messages.Length - 1] : "";
-                    
+                    stop = true;
+                  
+                    if (rtlTextBox != null) // hebrew of arabic
+                    {
+                        rtlTextBox.text = _messages.Length > 0 ? _messages[_messages.Length - 1] : "";
+
                         rtlTextBox.fontSize = 47;
                         rtlTextBox.fontStyle = FontStyles.Bold;
-                   
-                    rtlTextBox.ForceMeshUpdate();
-                }
-                else // english
-                {
-                    TextMeshProUGUI ltrTextBox = GetComponent<TextMeshProUGUI>();
-                    if (ltrTextBox != null)
-                    {
-                        ltrTextBox.text = _messages.Length > 0 ? _messages[ _messages.Length - 1] : "";
 
-                        ltrTextBox.fontSize = 40;
-                        ltrTextBox.fontStyle = FontStyles.Normal;
-
-                        ltrTextBox.ForceMeshUpdate();
+                        rtlTextBox.ForceMeshUpdate();
                     }
-                }
+                    else // english
+                    {
+                       
+                        if (ltrTextBox != null)
+                        {
+                            ltrTextBox.text = _messages.Length > 0 ? _messages[_messages.Length - 1] : "";
 
-                // פייד אין
-                yield return StartCoroutine(Fade(0f, 1f, fadeDuration));
+                            ltrTextBox.fontSize = 40;
+                            ltrTextBox.fontStyle = FontStyles.Normal;
+
+                            ltrTextBox.ForceMeshUpdate();
+                        }
+                    }
+
+                    // פייד אין
+                    yield return StartCoroutine(Fade(0f, 1f, fadeDuration));
+                    break;
+
+                }
 
             }
 
-              yield return null;
+
+            yield return null;
           }
 
           Debug.Log("Loop ended.");
