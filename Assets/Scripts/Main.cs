@@ -83,25 +83,26 @@ public class Main : MonoBehaviour
     {
         float percentage = countDownTimer.GetProgressionPrecentage();
         percentage = Mathf.Clamp01(percentage);
-       // Debug.Log("precentage"+ percentage);
 
-        // 2. חשבי רוחב מקסימלי שברצונך להגיע אליו
-        float maxScale = 20f; // או כל רוחב אחר שמתאים לך
-
-        Vector3 newScale = ray.gameObject.transform.localScale;
+        float maxScale = 20f;
+        Vector3 newScale = ray.transform.localScale;
         newScale.x = maxScale * percentage;
-        ray.gameObject.transform.localScale = newScale;
+        ray.transform.localScale = newScale;
 
-        //        // עדכן את מיקום אפקט החלקיקים
+        // רוחב מקורי של הספייט (לפני סקייל)
         float originalWidth = beamSpriteRenderer.sprite.bounds.size.x;
 
-        // Scale נוכחי
-        float scaleX = transform.localScale.x;
+        // סקייל נוכחי
+        float scaleX = ray.transform.localScale.x;
 
-        // מרחק מהפיווט הימני לקצה השמאלי
-        float leftEdgeLocalX = -originalWidth * scaleX;
+        // המרחק מה-pivot (שנמצא בימין) לקצה השמאלי, בעולמי
+        float offsetX = -originalWidth * scaleX - 0.5f;
 
-        // מקם את אפקט החלקיקים בקצה השמאלי
-        particleEffect.localPosition = new Vector3(leftEdgeLocalX, 0f, 0f);
+        // חשב את המיקום העולמי של הקצה השמאלי
+        Vector3 leftEdgeWorldPos = ray.transform.position + ray.transform.right * offsetX;
+
+        // מקם את אפקט החלקיקים שם
+        particleEffect.position = new Vector3(leftEdgeWorldPos.x, ray.transform.position.y, ray.transform.position.z);
     }
+
 }
