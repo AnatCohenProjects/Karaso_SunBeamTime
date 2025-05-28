@@ -25,6 +25,7 @@ public class Main : MonoBehaviour
     private bool isRunning = false;
     private CountDownTimer TimerScript;
     private LocalizationGroup titleTexts;
+    private ParticleSystem particleSystem;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +33,7 @@ public class Main : MonoBehaviour
         titleTexts = title.GetComponent<LocalizationGroup>();   
         startCountDownBtn.onClick.AddListener(StartStopwatch);
         resetBtn.onClick.AddListener(ResetGame);
-
+        particleSystem = particleEffect.GetComponent<ParticleSystem>();
 
     }
    
@@ -48,6 +49,7 @@ public class Main : MonoBehaviour
 
     void ResetGame()
     {
+        particleSystem.Stop();
         isRunning = false;
         infoBox.Hide();
         countDownTimer.gameObject.SetActive(false);
@@ -61,7 +63,7 @@ public class Main : MonoBehaviour
 
     void StartStopwatch()
     {
-
+        particleSystem.Play();
         countDownTimer.gameObject.SetActive(true);
         startCountDownBtn.gameObject.SetActive(false);
         infoBox.Show();
