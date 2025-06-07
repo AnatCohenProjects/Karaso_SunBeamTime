@@ -63,6 +63,7 @@ public class Main : MonoBehaviour
 
     void StartStopwatch()
     {
+        SoundManager.Instance.PlaySFX(SFX.Ping);
         particleSystem.Play();
         countDownTimer.gameObject.SetActive(true);
         startCountDownBtn.gameObject.SetActive(false);

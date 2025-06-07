@@ -50,6 +50,7 @@ public class BreathingText : MonoBehaviour
         float elapsed = 0f;
         if (_isActive)
             _canvasGroup.alpha = from;
+      
 
         while (elapsed < duration)
         {
@@ -111,9 +112,11 @@ public class BreathingText : MonoBehaviour
                         ltrTextBox.ForceMeshUpdate();
                     }
                  }
-           
-            // פייד אין
-            yield return StartCoroutine(Fade(0f, 1f, fadeDuration));
+
+                // פייד אין
+                if( i >= 1)
+                SoundManager.Instance.PlaySFX(SFX.ChangeText, 0.1f);
+                yield return StartCoroutine(Fade(0f, 1f, fadeDuration));
 
             // המתנה עד לפייד אאוט
             float displayTime = TextChangeFrequency - 2f * fadeDuration;

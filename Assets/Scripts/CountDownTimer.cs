@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.PlayerSettings;
 
 public class CountDownTimer : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class CountDownTimer : MonoBehaviour
     private bool IsStartTimer = false;
     private int maxTime;
     public static event Action OnTimerStopped;
+    private int curMin;
+    private int curSec;
 
     // Set countdown duration in seconds
     public void StartCountdown(int minutes)
@@ -19,6 +22,8 @@ public class CountDownTimer : MonoBehaviour
         clockText.text = "00:00";
         timeRemaining = 0;//minutes * 60;
         maxTime =  minutes * 60;
+        curMin = 0;
+        curSec = 0;
 
     }
     public float GetProgressionPrecentage()
@@ -34,6 +39,7 @@ public class CountDownTimer : MonoBehaviour
             {
                 timeRemaining += Time.deltaTime;
                 UpdateClockDisplay(timeRemaining);
+              
             }
             else
             { 
@@ -48,9 +54,18 @@ public class CountDownTimer : MonoBehaviour
 
     void UpdateClockDisplay(float time)
     {
+
         int minutes = Mathf.FloorToInt(time / 60);
         int seconds = Mathf.FloorToInt(time % 60);
+        if (curMin != seconds)
+        {
+            SoundManager.Instance.PlaySFX(SFX.ClockTik,0.1f);
+            curMin = seconds;
+        }
+        
         clockText.text = string.Format("{0:D2}:{1:D2}", minutes, seconds);
+        
+       
     }
 }
 
