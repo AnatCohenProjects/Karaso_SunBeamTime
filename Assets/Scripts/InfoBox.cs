@@ -113,7 +113,8 @@ public class InfoBox : MonoBehaviour
     {
         for (int i = 0; i < pingCount; i++)
         {
-            SoundManager.Instance.PlaySFX(SFX.Ping);
+            SoundManager.Instance.PlaySFX(SFX.EndCountdownShort);
+
             yield return new WaitForSeconds(pingDelay);
         }
     }

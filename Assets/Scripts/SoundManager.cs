@@ -6,7 +6,8 @@ public enum SFX
     Ping,
     ChangeLang,
     ChangeText,
-    ClockTik
+    ClockTik,
+    EndCountdownShort
     // Add more sound effect types here
 }
 
