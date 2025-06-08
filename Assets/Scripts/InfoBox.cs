@@ -4,6 +4,7 @@ using RTLTMPro;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.Localization.Settings;
+using System.Collections;
 
 [RequireComponent(typeof(RectTransform))]
 public class InfoBox : MonoBehaviour
@@ -24,6 +25,10 @@ public class InfoBox : MonoBehaviour
 
     [Header("Y when hide")]
     public float hiddenY = -500f;
+
+    [Header("ping sounds")]
+    [SerializeField] private float pingDelay = 0.5f; // Delay between ping sounds
+    [SerializeField] private int pingCount = 4; // Number of ping sounds to play
 
     public CountDownTimer countDownTimer;
 
@@ -100,5 +105,16 @@ public class InfoBox : MonoBehaviour
         textEN.GetComponent<BreathingText>().SetStopFadeSequence();
         textAR.GetComponent<BreathingText>().SetStopFadeSequence();
 
+        StartCoroutine(PlayPingSequence());
+
+    }
+
+    private IEnumerator PlayPingSequence()
+    {
+        for (int i = 0; i < pingCount; i++)
+        {
+            SoundManager.Instance.PlaySFX(SFX.Ping);
+            yield return new WaitForSeconds(pingDelay);
+        }
     }
 }

@@ -2707,6 +2707,8 @@ MonoBehaviour:
   duration: 0.5
   visibleY: -812
   hiddenY: -1209
+  pingDelay: 0.5
+  pingCount: 4
   countDownTimer: {fileID: 174624700}
 --- !u!1 &944398628
 GameObject:
