@@ -1,23 +1,23 @@
 # ninja log v5
-5	2558	7700442072889499	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	9846e644bfa815e2
-757	1210	7700442059301394	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d016a566c9be141
-128	1854	7700442065697040	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	753e541de244d09b
-73	1837	7700442065459114	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	7ed3e28ed9c55b42
-211	2359	7700442070872738	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	a0ee57ce0a8d90d5
-1211	2347	7700442070679656	D:/Programming/Unity Playground/Karaso_SunBeamTime/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1j6v2g6o/obj/arm64-v8a/libswappywrapper.so	7e0abca8ce83b0f7
-101	1856	7700442065651281	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	32dffcf40849d3f9
-22	2082	7700442068093648	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	3bcc37a503279a13
-43	1821	7700442065332640	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	dc04ce2a0c3ca1e8
-156	2393	7700442071198881	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	8474a64858be0e70
-2559	2809	7700442075305659	D:/Programming/Unity Playground/Karaso_SunBeamTime/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1j6v2g6o/obj/arm64-v8a/libgame.so	6c330bc5cc07f3a3
+3	2583	7701296434462577	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	9846e644bfa815e2
 664	1101	7701296419649734	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d016a566c9be141
-16	1686	7701296425304540	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	dc04ce2a0c3ca1e8
 128	1725	7701296425673735	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	753e541de244d09b
+1102	2029	7701296428901435	D:/Programming/Unity Playground/Karaso_SunBeamTime/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1j6v2g6o/obj/arm64-v8a/libswappywrapper.so	7e0abca8ce83b0f7
+202	2461	7701296433272652	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	a0ee57ce0a8d90d5
 36	1843	7701296426824480	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	7ed3e28ed9c55b42
 106	1898	7701296427633038	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	3bcc37a503279a13
 178	1979	7701296428403333	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	32dffcf40849d3f9
-1102	2029	7701296428901435	D:/Programming/Unity Playground/Karaso_SunBeamTime/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1j6v2g6o/obj/arm64-v8a/libswappywrapper.so	7e0abca8ce83b0f7
+16	1686	7701296425304540	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	dc04ce2a0c3ca1e8
 154	2409	7701296432712749	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	8474a64858be0e70
-202	2461	7701296433272652	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	a0ee57ce0a8d90d5
-3	2583	7701296434462577	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	9846e644bfa815e2
 2584	2846	7701296436983581	D:/Programming/Unity Playground/Karaso_SunBeamTime/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1j6v2g6o/obj/arm64-v8a/libgame.so	6c330bc5cc07f3a3
+291	776	7711791721574655	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d016a566c9be141
+176	1205	7711791726975015	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	753e541de244d09b
+155	1221	7711791727252493	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	32dffcf40849d3f9
+17	1264	7711791727702622	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	7ed3e28ed9c55b42
+777	1269	7711791727642783	D:/Programming/Unity Playground/Karaso_SunBeamTime/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1j6v2g6o/obj/arm64-v8a/libswappywrapper.so	7e0abca8ce83b0f7
+35	1280	7711791727881119	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	dc04ce2a0c3ca1e8
+50	1391	7711791729013776	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	3bcc37a503279a13
+199	1423	7711791729312972	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	a0ee57ce0a8d90d5
+117	1513	7711791730233143	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	8474a64858be0e70
+6	1605	7711791731115919	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	9846e644bfa815e2
+1606	1765	7711791732728238	D:/Programming/Unity Playground/Karaso_SunBeamTime/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1j6v2g6o/obj/arm64-v8a/libgame.so	6c330bc5cc07f3a3
