@@ -1,11 +1,6 @@
 ﻿
 using UnityEngine;
 using UnityEngine.UI; 
-using System.Collections;
-using TMPro;
-using System;
-using UnityEngine.SocialPlatforms.Impl;
-using RTLTMPro;
 using UnityEngine.Localization.Settings;
 
 public class Main : MonoBehaviour
@@ -87,7 +82,7 @@ public class Main : MonoBehaviour
         float percentage = countDownTimer.GetProgressionPrecentage();
         percentage = Mathf.Clamp01(percentage);
 
-        float maxScale = 20f;
+        float maxScale = 27.3f;
         Vector3 newScale = ray.transform.localScale;
         newScale.x = maxScale * percentage;
         ray.transform.localScale = newScale;
